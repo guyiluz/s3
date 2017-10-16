@@ -1,0 +1,57 @@
+// @import 'some';
+@import 'nav';
+@import 'search';
+@import '../../../node_modules/semantic-ui-css/semantic.min.css';
+@import 'slidebar';
+
+html,body {
+margin: 0;
+padding: 0
+
+}
+
+html,body{
+    margin: 0;
+    
+  }
+  
+  .layout {
+  display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10vh 30vh 60vh;
+     grid-template-areas: 
+    "a a a a a a"
+     ". . b . . ."
+       " . . c c c . "
+       ". . d . . ."
+    
+   
+  }
+  
+  
+  .nav{
+    background: red;
+  
+    grid-area:a
+   
+  
+    
+  }
+
+ 
+  
+  .footer{
+  
+    background: black;
+    grid-area:d;
+    
+  }
+  
+
+.admin{
+
+          grid-area:d;
+
+       
+  
+}
